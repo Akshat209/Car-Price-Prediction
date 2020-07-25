@@ -22,22 +22,22 @@
 
 <div class="cen price">
     <span>Showroom Price(in lakhs)</span>
-    <input type="text" name="Showroom-Price" required="required"></input>
+    <input type="text" name="Present-Price" required="required"></input>
 </div>
 
 <div class="cen dist">
     <span>Total Distance Driven</span>
-    <input type="text" name="Distance" required="required"></input>
+    <input type="text" name="Kms_Driven" required="required"></input>
 </div>
 
 <div class="cen owner">
     <span>Previous Owners</span>
-    <input type="text" name="Owners" required="required"></input>
+    <input type="text" name="Owner" required="required"></input>
 </div>
 
 <div class="cen fuel">
     <span>Fuel Type</span>
-    <select>
+    <select name="Fuel_Type_Petrol">
         <option>Petrol</option>
         <option>Diesel</option>
         <option>CNG</option>
@@ -46,15 +46,15 @@
 
 <div class="cen dealer">
     <span>Are you a Dealer or Individual</span>
-    <select>
+    <select name="Seller_Type_Individual">
         <option>Dealer</option>
         <option>Individual</option>
     </select>
 </div>
 
 <div class="cen trans">
-    <span>Transmission Manual</span>
-    <select>
+    <span>Transmission Type</span>
+    <select name="Transmission_Manual">
         <option>Automatic</option>
         <option>Manual</option>
     </select>
@@ -105,7 +105,7 @@ button:hover
     background-color: green;
     color: white;
 }
-    
+
 </style>
 
 </body>
