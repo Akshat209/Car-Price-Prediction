@@ -66,13 +66,25 @@
 
 <br>
 
-<button class="btn-sub animate__animated animate__backInLeft" type="submit">Calculate Car Price</button>
+<button class="btn-sub animate__animated animate__backInLeft" type="submit" onclick="fun()">Calculate Car Price</button>
 
 </form>
 
-<h3>{{ prediction_text }}<h3>
+<span class="var">pred_price = {{ prediction_text }}</span>
+
+<script>
+    function fun(pred_price)
+    {
+        alert("You can sell your Car at " + pred_price);
+    }
+</script>
 
 <style>
+
+.var
+{
+    display: none;
+}
     
 body 
 {
@@ -91,6 +103,11 @@ h1
     background-color: white;
     font-weight: bold;
     border-radius: 15px;
+}
+
+h3
+{
+    display: none;
 }
 
 h4
