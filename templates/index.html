@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Price Prediction</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
@@ -66,14 +65,14 @@
 
 <br>
 
-<button class="btn-sub animate__animated animate__backInLeft" type="submit">Calculate Car Price</button>
+<button class="btn-sub animate__animated animate__backInLeft" type="submit" onclick="fun()">Calculate Car Price</button>
 
 </form>
 
-<br><h3>{{ prediction_text }}</h3>
+<h3>{{ prediction_text }}</h3>
 
 <style>
-    
+
 body 
 {
     text-align: center;
@@ -91,11 +90,6 @@ h1
     background-color: white;
     font-weight: bold;
     border-radius: 15px;
-}
-
-h3
-{
-    display: none;
 }
 
 h4
